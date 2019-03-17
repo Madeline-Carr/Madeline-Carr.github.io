@@ -62,20 +62,30 @@ header {
   padding: 30px 0px;
   text-align: center;
   color: white; }
-  #skills h1 {
-    color: #162938; }
+  #skills h2 {
+    color: #162938;
+    font-size: 2em; }
   #skills ul {
     list-style-type: none;
     padding: 0px; }
+  #skills img {
+    width: 40%;
+    padding-top: 15px; }
 
 #skills_grid {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-column-gap: 25px; }
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 5%;
+  grid-row-gap: 20px; }
   #skills_grid div {
-    background-color: #43c7f2;
+    border: 8px solid #eacc31;
+    background-color: #162938;
     padding: 10px;
     border-radius: 10px; }
+  #skills_grid .gold {
+    color: #eacc31; }
+  #skills_grid .silver {
+    color: silver; }
 
 #location {
   background-color: #162938;

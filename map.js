@@ -7,7 +7,7 @@ function initMap() {
         styles: [
             { elementType: 'geometry', stylers: [{ color: '#162938' }] },
             { elementType: 'labels.text.stroke', stylers: [{ color: '#162938' }] },
-            { elementType: 'labels.text.fill', stylers: [{ color: '#7468fff55' }] },
+            { elementType: 'labels.text.fill', stylers: [{ color: '#746855' }] },
             {
                 featureType: 'administrative.locality',
                 elementType: 'labels.text.fill',
