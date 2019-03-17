@@ -6,36 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="Styles/styles.css">
-  <title>Document</title>
+  <link rel="icon" href="./Assets/myIcon-01.jpg" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+
+  <title>Madeline Carr</title>
 </head>
 
 <body>
+
+  <!-- Header -->
   <header>
     <div class="container">
       <img src="Assets/myIcon-01.jpg" alt="Me" id="header-icon">
-      <ul>
+
+      <ul class="nav navbar-nav" data-spy="affix" data-offset-top="605" data-offset- bottom="425"
+        id="prepare-navigation">
         <li>About Me</li>
-        <li>Projects</li>
-        <li class="active">Skills</li>
+        <li><a href="#projects">Projects</a></li>
+        <li class="active"><a href="#skills">Skills</a></li>
         <li>Location</li>
         <li>Contact Me</li>
       </ul>
     </div>
   </header>
 
+  <!-- About Me -->
   <section id="aboutMe">
     <div class="container">
       <div id="title">
         <h1>Hello, I am</h1>
         <h1>Madeline Carr!</h1>
       </div>
+
+      <!-- 
+  <img src="./Assets/me.png" alt="It's me!">
+ -->
       <h2>I am a web developer based in Richmond, VA.</h2>
+      <div id="pro"></div>
     </div>
   </section>
 
+  <!-- Projects -->
   <section id="projects">
     <div class="container">
-      <h1>Projects</h1>
+      <h2>Projects</h2>
+      <hr>
       <div id="projects_grid">
         <div>One</div>
         <div>Two</div>
@@ -43,10 +61,10 @@
       </div>
     </div>
   </section>
-
+  <!-- Skills -->
   <section id="skills">
     <div class="container">
-      <h2>Skills</h2>
+      <h2>My Skills</h2>
       <div id="skills_grid">
         <div>
           <img src="./Assets/Coins/gold.png" alt="Gold">
@@ -82,6 +100,7 @@
     </div>
   </section>
 
+  <!-- Location -->
   <section id="location">
     <div class="container location-grid">
       <div id="locationText">
@@ -89,26 +108,39 @@
         <hr>
         <h3>I live in Richmond Virginia.</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, ducimus? Animi harum incidunt inventore
-          aspernatur praesentium ab quia voluptate cumque laborum ad. Incidunt animi culpa nemo aut eaque iure atque?
+          aspernatur praesentium ab quia voluptate cumque laborum ad. Incidunt animi culpa nemo aut eaque iure
+          atque?
         </p>
       </div>
       <div id="map"></div>
     </div>
   </section>
 
+  <!-- Contact Me -->
   <section id="contactMe">
     <div class="container">
       <h2>Contact Me</h2>
       <hr>
-      <h3>Email:</h3>
-      <p>MadelineNCarr@Gmail.com</p>
+      <div id="contact_grid">
+        <div id="one">
+          <h3>Email:</h3>
+          <p>MadelineNCarr@Gmail.com</p>
+        </div>
+        <div id="two">
+          <h3>Address:</h3>
+          <p>Richmond, VA </p>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- Footer -->
   <footer>
     <div class="container">
-      <h2>This is the footer!</h2>
     </div>
   </footer>
+
+
 
   <script src="index.js"></script>
   <script src="./map.js"></script>

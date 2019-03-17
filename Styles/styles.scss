@@ -7,7 +7,9 @@ body{
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    position: relative
 }
+
 .container{
     width: 70%; 
     margin: 0 auto;
@@ -15,6 +17,10 @@ body{
 
 //Header
 header{
+    //Do not Delete z-index. It is used to make the header appear on top of the map.
+    z-index: 1;
+    position: fixed;
+    width: 100%;
     padding: 20px 0 20px 0;
     background-color: black;
     color: white;
@@ -25,13 +31,16 @@ header{
     li{
         display: inline;
         padding-left: 40px;
+        .active{
+            font-size: 1.1em;
+            color: $light_red;
+        }
+    }
+    a{ text-decoration: none;
+        color: white;
         &:hover {
             color:$light_blue;
         }
-    }
-    .active{
-        font-size: 1.1em;
-        color: $light_red;
     }
 
 }
@@ -49,7 +58,7 @@ header{
 //About Me Section
 #aboutMe{
     background-color: $light_blue;
-    padding: 100px 0 100px 0;
+    padding: 250px 0 130px 0;
     //background-image: url("../Assets/img.png");
 
     h1{
@@ -61,6 +70,7 @@ header{
 #title{
         margin-top: 80px;
         margin-bottom: 30px;
+        
 }
 
 //Projects
@@ -69,6 +79,9 @@ header{
     padding: 30px 0px; 
     background-color: $dark_blue;
     color: white;
+    h2{
+        font-size: 2em;
+    }
 }
 #projects_grid{
     display: grid;
@@ -122,7 +135,7 @@ header{
 
 //Location
 #location{
-    background-color: $dark_blue;
+    background-color: $super_dark_blue;
     padding: 40px 0 40px 0;
     h2{
         color: white;
@@ -158,12 +171,40 @@ header{
     background-color:$light_red;
     color: white;
     padding: 30px 0;
+    h2{
+        font-size: 2em;
+    }
 }
 
+#contact_grid{
+
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 20px;
+    #one{
+        grid-column: 1/2;
+    }
+    #two{
+        grid-column: 2/3;
+    }
+}
 //Footer
 footer{
+    text-align: center;
+    width: 100%;
     background-color: #111;
     color: white;
-    padding: 30px 0;
+    padding: 30px 0 50px 0;
+    #social{
+        font-size: 30px;
+    }
+    a{
+        color: white;
+
+        &:hover{
+            color:$light_red;}
+    }
+    
 }
 
