@@ -14,6 +14,7 @@
     <div class="container">
       <img src="Assets/Icon.jpg" alt="Me" id="header-icon">
       <ul>
+        <li>About Me</li>
         <li class="active">Skills</li>
         <li>Projects</li>
         <li>Location</li>
@@ -21,8 +22,59 @@
       </ul>
     </div>
   </header>
+  <section id="aboutMe">
+    <div class="container">
+      <div id="title">
+        <h1>Hello, I am</h1>
+        <h1>Madeline Carr!</h1>
+      </div>
+      <h2>I am a web developer based in Richmond, VA.</h2>
+    </div>
+
+  </section>
+  <section id="skills">
+    <div class="container">
+      <h1>Skills</h1>
+      <div class="skills_grid">
+        <div>ONe</div>
+        <div>Two</div>
+        <div>Three</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="location">
+    <div class="container location-grid">
+      <div id="locationText">
+        <h2>Location</h2>
+        <hr>
+        <h3>I live in Richmond Virginia.</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, ducimus? Animi harum incidunt inventore
+          aspernatur praesentium ab quia voluptate cumque laborum ad. Incidunt animi culpa nemo aut eaque iure atque?
+        </p>
+      </div>
+      <div id="map"></div>
+    </div>
+  </section>
+
+  <section id="contactMe">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <hr>
+      <h3>Email:</h3>
+      <p>MadelineNCarr@Gmail.com</p>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <h2>This is the footer!</h2>
+    </div>
+  </footer>
 
   <script src="index.js"></script>
+  <script src="./map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7qQXZwLt2cimM0skOmt0GoV7z_awid64
+  &callback=initMap"></script>
 </body>
 
 </html>

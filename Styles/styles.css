@@ -12,9 +12,8 @@ header {
   background-color: black;
   color: white; }
   header ul {
-    float: right;
-    display: inline;
-    list-style-type: none; }
+    list-style-type: none;
+    float: right; }
   header li {
     display: inline;
     padding-left: 40px; }
@@ -22,7 +21,7 @@ header {
       color: aquamarine; }
   header .active {
     font-size: 1.1em;
-    color: tomato; }
+    color: #fa5c40; }
 
 #header-icon {
   height: 50px;
@@ -30,7 +29,51 @@ header {
   border-radius: 50%;
   border: 3px solid white; }
 
-p {
-  color: tomato; }
+#aboutMe {
+  background-color: #43c7f2;
+  padding: 100px 0 100px 0; }
+  #aboutMe h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+    margin-top: 20px; }
+
+#title {
+  margin-top: 80px;
+  margin-bottom: 30px; }
+
+#location {
+  background-color: #162938;
+  padding: 40px 0 40px 0; }
+  #location h2 {
+    color: white;
+    font-size: 2em; }
+  #location h3 {
+    color: #fa5c40; }
+  #location p {
+    color: aliceblue; }
+
+.location-grid {
+  display: grid;
+  grid-template-columns: auto 600px;
+  grid-column-gap: 25px; }
+
+#locationText {
+  grid-column: 1/2; }
+
+#map {
+  height: 400px;
+  width: 600px;
+  grid-column: 2/3;
+  margin: 0 auto; }
+
+#contactMe {
+  background-color: #fa5c40;
+  color: white;
+  padding: 30px; }
+
+footer {
+  background-color: #111;
+  color: white;
+  padding: 30px; }
 
 /*# sourceMappingURL=styles.css.map */

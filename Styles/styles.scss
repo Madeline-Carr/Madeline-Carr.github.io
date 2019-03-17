@@ -1,5 +1,7 @@
 //sass --watch Styles/styles.scss:Styles/styles.css
 
+@import 'variables';
+
 //General 
 body{
     padding: 0;
@@ -17,8 +19,8 @@ header{
     background-color: black;
     color: white;
     ul{
-        display: inline;
         list-style-type: none;
+        float: right;
     }
     li{
         display: inline;
@@ -29,7 +31,7 @@ header{
     }
     .active{
         font-size: 1.1em;
-        color: tomato;
+        color: $light_red;
     }
 
 }
@@ -40,9 +42,64 @@ header{
     border-radius: 50%;
     border: 3px solid white;
 }
-
-//Body
-p{
-    color: tomato;
+//About Me Section
+#aboutMe{
+    background-color: $light_blue;
+    padding: 100px 0 100px 0;
+    h1{
+        font-size: 70px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+}
+#title{
+        margin-top: 80px;
+        margin-bottom: 30px;
 }
 
+//Location
+#location{
+    background-color: $dark_blue;
+    padding: 40px 0 40px 0;
+    h2{
+        color: white;
+        font-size: 2em;
+    }
+    h3{
+        color: $light_red;
+        
+    }
+    p{
+        color: aliceblue;
+    }
+}
+.location-grid{
+    display: grid;
+    grid-template-columns: auto 600px;
+    grid-column-gap: 25px;
+
+}
+
+#locationText{
+    grid-column: 1/2;
+}
+#map {
+   height: 400px;
+   width: 600px;
+   grid-column: 2/3;
+    margin: 0 auto;
+}
+
+//Contact Me
+#contactMe{
+    background-color:$light_red;
+    color: white;
+    padding: 30px;
+}
+
+//Footer
+footer{
+    background-color: #111;
+    color: white;
+    padding: 30px;
+}
