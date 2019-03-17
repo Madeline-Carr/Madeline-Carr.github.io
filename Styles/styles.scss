@@ -26,7 +26,7 @@ header{
         display: inline;
         padding-left: 40px;
         &:hover {
-            color:aquamarine;
+            color:$light_blue;
         }
     }
     .active{
@@ -41,11 +41,17 @@ header{
     width: 50px;
     border-radius: 50%;
     border: 3px solid white;
+
+    &:hover {
+        border: 3px solid $light_blue;
+    }
 }
 //About Me Section
 #aboutMe{
     background-color: $light_blue;
     padding: 100px 0 100px 0;
+    //background-image: url("../Assets/img.png");
+
     h1{
         font-size: 70px;
         margin-bottom: 10px;
@@ -55,6 +61,51 @@ header{
 #title{
         margin-top: 80px;
         margin-bottom: 30px;
+}
+
+//Projects
+
+#projects{
+    padding: 30px 0px; 
+    background-color: $dark_blue;
+    color: white;
+}
+#projects_grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 20px;
+    div{
+        background-color: $light_blue;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+
+
+//Skills
+
+#skills{
+    padding: 30px 0px; 
+    text-align: center;
+    color: white;
+    h1{
+        color: $dark_blue;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0px;
+      }
+}
+#skills_grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 25px;
+    div{
+        background-color: $light_blue;
+        padding: 10px;
+        border-radius: 10px;
+    }
 }
 
 //Location
@@ -94,12 +145,13 @@ header{
 #contactMe{
     background-color:$light_red;
     color: white;
-    padding: 30px;
+    padding: 30px 0;
 }
 
 //Footer
 footer{
     background-color: #111;
     color: white;
-    padding: 30px;
+    padding: 30px 0;
 }
+
