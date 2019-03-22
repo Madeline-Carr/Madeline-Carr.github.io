@@ -2,7 +2,7 @@
 function initMap() {
     // Styles a map in night mode.
     var map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: 37.511233, lng: -77.623653 },
+        center: { lat: 37.5407, lng: -77.4360 },
         zoom: 9,
         styles: [
             { elementType: 'geometry', stylers: [{ color: '#162938' }] },
@@ -87,7 +87,7 @@ function initMap() {
 
     });
     var marker = new google.maps.Marker({
-        position: { lat: 37.511233, lng: -77.623653 },
+        position: { lat: 37.5407, lng: -77.4360 },
         map: map,
         title: 'Hello World!'
     });

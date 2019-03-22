@@ -48,12 +48,14 @@ header{
             padding: 5px;
             border-bottom: 2px solid $light_red;
             color: $light_red;
+
         }
     }
     a{ text-decoration: none;
         color: white;
         &:hover {
             color:$light_blue;
+            
         }
     }
 
@@ -67,6 +69,8 @@ header{
 
     &:hover {
         border: 3px solid $light_blue;
+        transition: all 0.3s ease 0s;
+
     }
 }
 
