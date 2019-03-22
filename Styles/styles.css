@@ -223,5 +223,8 @@ footer {
       color: #ef3d36; }
   footer i {
     padding: 5px; }
+  footer p {
+    padding: 8px;
+    font-size: 13px; }
 
 /*# sourceMappingURL=styles.css.map */
