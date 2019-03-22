@@ -18,6 +18,7 @@ body{
     margin: 0 auto;
 }
 
+
 //Header
 header{
     
@@ -249,7 +250,32 @@ header{
         font-size: 2em;
         color: $super_dark_blue;
     }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    button{
+        background-color: $light_red;
+        border:  3px solid white;
+        padding: 10px;
+       // border-radius: 10%;
+        width: 100%;
+        font-size: 1.1em;
+        a{
+            color: white;
+        }
+        &:hover{
+            a{
+                color: $light_red;
+               }
+            background-color: white;
+            color: $light_red;
+        }
+    }
+    
 }
+
 
 #contact_grid{
     display: grid;

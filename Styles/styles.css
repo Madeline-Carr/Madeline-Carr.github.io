@@ -47,7 +47,8 @@ header {
   border-radius: 50%;
   border: 3px solid white; }
   #header-icon:hover {
-    border: 3px solid #43c7f2; }
+    border: 3px solid #43c7f2;
+    transition: all 0.3s ease 0s; }
 
 #aboutMe {
   margin: 0 0 15px 0;
@@ -180,6 +181,22 @@ header {
   #contactMe h2 {
     font-size: 2em;
     color: #030b11; }
+  #contactMe a {
+    text-decoration: none;
+    color: white; }
+  #contactMe button {
+    background-color: #ef3d36;
+    border: 3px solid white;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.1em; }
+    #contactMe button a {
+      color: white; }
+    #contactMe button:hover {
+      background-color: white;
+      color: #ef3d36; }
+      #contactMe button:hover a {
+        color: #ef3d36; }
 
 #contact_grid {
   display: grid;
