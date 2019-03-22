@@ -266,6 +266,8 @@ header{
             color: white;
         }
         &:hover{
+            transition: all 0.4s ease 0s;
+
             a{
                 color: $light_red;
                }
