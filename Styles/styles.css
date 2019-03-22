@@ -94,8 +94,8 @@ button {
 
 #projects_grid {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 25px;
+  grid-template-columns: 49% 49%;
+  grid-column-gap: 2%;
   grid-row-gap: 20px; }
   #projects_grid div {
     padding: 10px; }
@@ -110,7 +110,8 @@ button {
   .projectCard .info {
     padding: 5px; }
   .projectCard a {
-    color: black; }
+    color: black;
+    float: right; }
     .projectCard a:hover {
       color: #43c7f2; }
   .projectCard h3 {
@@ -199,9 +200,12 @@ button {
     top: 70px; }
   #contactMe hr {
     float: left;
-    width: 50%; }
+    width: 100%;
+    grid-column: 1/3; }
   #contactMe h2 {
     font-size: 2em;
+    color: #030b11; }
+  #contactMe h3 {
     color: #030b11; }
   #contactMe a {
     color: white; }
@@ -224,7 +228,7 @@ button {
   display: grid;
   grid-template-columns: 30% 30%;
   grid-column-gap: 25px;
-  grid-row-gap: 20px; }
+  grid-row-gap: 10px; }
   #contact_grid #para {
     grid-column: 1/3; }
   #contact_grid #one {
