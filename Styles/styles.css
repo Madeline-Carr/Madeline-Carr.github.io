@@ -57,6 +57,9 @@ header {
     transition: all 0.3s ease 0s; }
 
 #aboutMe {
+  background-image: url(/Assets/clouds-01.png);
+  background-position: center;
+  background-size: cover;
   margin: 0 0 15px 0;
   color: #030b11;
   background-color: #43c7f2;

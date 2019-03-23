@@ -84,11 +84,17 @@ header{
 
 //About Me Section
 #aboutMe{
+    background-image: url(/Assets/clouds-01.png);
+    background-position: center; 
+    background-size: cover; 
+
     margin: 0 0 15px 0 ;
     color: $super_dark_blue;
+   
+    
+      
     background-color: $light_blue;
     padding: 250px 0 130px 0;
-    //background-image: url("../Assets/img.png");
 
     h1{
         font-size: 70px;
@@ -390,8 +396,7 @@ footer{
             height: 70px;
             width: 70px;
         }
-
-
+        
     }
   }
   
