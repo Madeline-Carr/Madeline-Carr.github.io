@@ -259,7 +259,6 @@ footer {
 
 @media only screen and (max-width: 910px) {
   header #iconContainer {
-    float: left;
     width: 15%;
     margin-top: 35px; }
   header nav {
@@ -281,6 +280,9 @@ footer {
       padding: 5px; }
   header #header-icon {
     height: 70px;
-    width: 70px; } }
+    width: 70px; }
+
+  #skills_grid {
+    grid-template-columns: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */

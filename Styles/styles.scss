@@ -360,19 +360,17 @@ footer{
     }
 }
 
-
+// MEDIA QUERIES
 @media only screen and (max-width: 910px) {
     //Header Section
     header{
         #iconContainer{
-            float: left;
             width: 15%;
             margin-top: 35px;
         }
         nav{
             float: right;
             width: 85%;
-            
         }
         ul{
             width: 100%;
@@ -392,12 +390,20 @@ footer{
                 padding: 5px;
             }
         }
+
         #header-icon{
             height: 70px;
             width: 70px;
         }
-        
     }
+        
+        //Skills
+
+#skills_grid{
+    grid-template-columns: 100%;
+}
+//END SKILLS
+
   }
   
   
