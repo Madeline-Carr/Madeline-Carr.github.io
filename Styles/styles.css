@@ -282,7 +282,54 @@ footer {
     height: 70px;
     width: 70px; }
 
+  #aboutMe h1 {
+    font-size: 52px;
+    margin-bottom: 5px;
+    margin-top: 10px; }
+
+  button {
+    width: 66%;
+    font-size: 1.1em; }
+
+  #title {
+    margin-top: 80px;
+    margin-bottom: 30px; }
+
+  #projects_grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2%;
+    grid-row-gap: 20px; }
+    #projects_grid div {
+      padding: 10px; }
+
   #skills_grid {
-    grid-template-columns: 100%; } }
+    grid-template-columns: 50% 50%; }
+
+  .location-grid {
+    color: orange;
+    grid-column-gap: 5%;
+    grid-row-gap: 20px; } }
+@media only screen and (max-width: 510px) {
+  #aboutMe h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    margin-top: 10px; }
+
+  #title {
+    margin-top: 20px;
+    margin-bottom: 30px; }
+
+  button {
+    width: 100%;
+    font-size: 1.1em; }
+
+  #skills_grid {
+    grid-template-columns: 100%; }
+
+  .location-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 25px; } }
 
 /*# sourceMappingURL=styles.css.map */
