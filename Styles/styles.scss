@@ -180,6 +180,10 @@ button{
 //Skills
 
 #skills{
+    background: url(/Assets/clouds-01.png);
+   // background-image: url(/Assets/starsBackground.png);
+    @include backgroundTexture;
+    background-blend-mode: hard-light;
     padding: 30px 0px; 
     text-align: center;
     color: white;
@@ -212,7 +216,7 @@ button{
     div{
         border: 8px solid $gold;
         background-color: $dark_blue;
-        padding: 10px;
+        padding: 20px;
         border-radius: 10px;}
     .gold{
         color: $gold;
@@ -525,6 +529,4 @@ button{
 
 //END LOCATION 
   }
-  
-  
   

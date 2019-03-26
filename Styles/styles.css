@@ -125,6 +125,10 @@ button {
     display: inline; }
 
 #skills {
+  background: url(/Assets/clouds-01.png);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: hard-light;
   padding: 30px 0px;
   text-align: center;
   color: white;
@@ -152,7 +156,7 @@ button {
   #skills_grid div {
     border: 8px solid #eacc31;
     background-color: #0d1f2c;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px; }
   #skills_grid .gold {
     color: #eacc31; }
