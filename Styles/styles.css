@@ -178,7 +178,7 @@ button {
 
 .location-grid {
   display: grid;
-  grid-template-columns: auto 600px;
+  grid-template-columns: 1fr 2fr;
   grid-column-gap: 25px; }
 
 #locationText {
@@ -311,9 +311,14 @@ footer {
     grid-template-columns: 50% 50%; }
 
   .location-grid {
-    color: orange;
-    grid-column-gap: 5%;
-    grid-row-gap: 20px; } }
+    grid-template-columns: 100%;
+    grid-column-gap: 0px; }
+
+  #locationText {
+    grid-column: 1/3; }
+
+  #map {
+    grid-column: 1/3; } }
 @media only screen and (max-width: 510px) {
   #aboutMe h1 {
     font-size: 32px;
