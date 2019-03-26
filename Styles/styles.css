@@ -358,5 +358,13 @@ footer {
     display: grid;
     grid-template-columns: 100%;
     grid-column-gap: 25px; } }
+@media only screen and (min-width: 1820px) {
+  #projects_grid {
+    display: grid;
+    grid-template-columns: 32.333% 32.333% 32.333%;
+    grid-column-gap: 1.333%;
+    grid-row-gap: 3.33%; }
+    #projects_grid div {
+      padding: 10px; } }
 
 /*# sourceMappingURL=styles.css.map */

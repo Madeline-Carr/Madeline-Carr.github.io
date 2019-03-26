@@ -530,3 +530,16 @@ button{
 //END LOCATION 
   }
   
+  //Largest Screen
+  @media only screen and (min-width: 1820px) {
+    #projects_grid{
+        display: grid;
+        grid-template-columns: 32.333% 32.333% 32.333%;
+        grid-column-gap: 1.333%;
+       grid-row-gap: 3.33%;
+        div{
+            padding: 10px;
+        }
+    }
+
+  }
