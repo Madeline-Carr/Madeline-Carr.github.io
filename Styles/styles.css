@@ -161,6 +161,10 @@ button {
     border-color: silver; }
 
 #location {
+  background: url(/Assets/Brick-01.png);
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-size: cover;
   background-color: #030b11;
   padding: 50px 0 50px 0; }
   #location h2 {
@@ -181,8 +185,8 @@ button {
   grid-column: 1/2; }
 
 #map {
-  height: 400px;
-  width: 600px;
+  width: 100%;
+  min-height: 400px;
   grid-column: 2/3;
   margin: 0 auto; }
 
@@ -198,9 +202,9 @@ button {
   margin: 15px 0 15px 0; }
   #contactMe img {
     position: absolute;
-    width: 40%;
+    height: 100%;
     right: 0px;
-    top: 70px; }
+    top: 10%; }
   #contactMe hr {
     float: left;
     width: 100%;
