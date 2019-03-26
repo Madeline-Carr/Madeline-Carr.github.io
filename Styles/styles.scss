@@ -1,6 +1,7 @@
 //sass --watch Styles/styles.scss:Styles/styles.css
 
 @import 'variables';
+@import 'mixins';
 
 //General 
 body{
@@ -85,9 +86,7 @@ header{
 //About Me Section
 #aboutMe{
     background-image: url(/Assets/clouds-01.png);
-    background-position: center; 
-    background-size: cover; 
-
+    @include backgroundTexture;
     margin: 0 0 15px 0 ;
     color: $super_dark_blue;
    
@@ -230,10 +229,7 @@ button{
 #location{
     background: url(/Assets/Brick-01.png);
     background-blend-mode: soft-light;
-    background-position: center; 
-    background-size: cover; 
-
-
+    @include backgroundTexture;
     background-color: $super_dark_blue;
     padding: 50px 0 50px 0;
     h2{
@@ -269,15 +265,16 @@ button{
 
 //Contact Me
 #contactMe{
+    //Background 
     background: url(/Assets/ContactBackground-01.svg);
-    background-position: center; 
-    background-size: cover; 
+    @include backgroundTexture;
     background-color:$light_red;
+
     position: relative;
     width: 100%;
     color: white;
     padding: 30px 0 100px 0;
-   margin: 15px 0 15px 0 ;
+    margin: 15px 0 15px 0 ;
 
    img{
      position:absolute;

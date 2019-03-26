@@ -14,3 +14,4 @@ This project is meant to be an online portfolio where I can display my web devel
     
 3. CSS Grid
     - I used CSS Grid to create a simple but responsive layout that is easy to work with and will adapt when I add more content in the future.
+
