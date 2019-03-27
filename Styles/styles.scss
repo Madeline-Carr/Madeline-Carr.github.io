@@ -26,7 +26,6 @@ a{
 
 //Header
 header{
-    
     //Do not Delete z-index. It is used to make the header appear on top of the map.
     z-index: 1;
     position: fixed;
@@ -79,7 +78,6 @@ header{
     &:hover {
         border: 3px solid $light_blue;
         transition: all 0.3s ease 0s;
-
     }
 }
 
@@ -109,15 +107,10 @@ header{
 }
 
 button{
+    @include button;
     background-color: $light_blue;
-    border:  3px solid white;
-    padding: 10px;
-   // border-radius: 10%;
     width: 33%;
-    font-size: 1.1em;
-    a{
-        color: white;
-    }
+    
     &:hover{
         transition: all 0.4s ease 0s;
 
@@ -126,12 +119,12 @@ button{
            }
         background-color: white;
         color: $light_blue;
-    }}
+    }
+}
 
 //Projects
 
 #projects{
-   
     padding: 30px 0px; 
     background-color: $super_dark_blue;
     color: white;
@@ -164,7 +157,6 @@ button{
     a{
         color: black;
         float: right;
-        
         &:hover{
             color:$light_blue;}
     }
@@ -176,13 +168,10 @@ button{
     }
 }
     
-
-
 //Skills
 
 #skills{
     background: url(/Assets/clouds-01.png);
-   // background-image: url(/Assets/starsBackground.png);
     @include backgroundTexture;
     background-blend-mode: hard-light;
     padding: 30px 0px; 
@@ -221,7 +210,6 @@ button{
         border-radius: 10px;}
     .gold{
         color: $gold;
-        
     }
     .silver{
         color: silver;
@@ -244,7 +232,6 @@ button{
     }
     h3{
         color: $light_red;
-        
     }
     p{
         color: aliceblue;
@@ -254,14 +241,12 @@ button{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-column-gap: 25px;
-
 }
 
 #locationText{
     grid-column: 1/2;
 }
 #map {
-   
    width: 100%;
    min-height: 400px;
    grid-column: 2/3;
@@ -274,23 +259,21 @@ button{
     background: url(/Assets/ContactBackground-01.svg);
     @include backgroundTexture;
     background-color:$light_red;
-
     position: relative;
     width: 100%;
     color: white;
     padding: 30px 0 100px 0;
     margin: 15px 0 15px 0 ;
-
    img{
      position:absolute;
      width:40%;
      right:0px;
      bottom:0px;
-}
+    }
     hr{
         float: left;
         width: 100%;
-       grid-column: 1/4;
+        grid-column: 1/4;
     }
     h2{
         font-size: 2em;
@@ -306,18 +289,11 @@ button{
         font-size: 1.2em;
     }
     button{
+        @include button;
         background-color: $light_red;
-        border:  3px solid white;
-        padding: 10px;
-       // border-radius: 10%;
         width: 90%;
-        font-size: 1.1em;
-        a{
-            color: white;
-        }
         &:hover{
             transition: all 0.4s ease 0s;
-
             a{
                 color: $light_red;
                }
@@ -325,9 +301,7 @@ button{
             color: $light_red;
         }
     }
-    
 }
-
 
 #contact_grid{
     display: grid;
@@ -356,7 +330,6 @@ footer{
     }
     a{
         color: white;
-
         &:hover{
             color:$light_red;}
     }
@@ -370,6 +343,87 @@ footer{
 }
 
 // MEDIA QUERIES
+  
+// Smaller than 510px
+@media only screen and (max-width: 510px) {
+    
+    .container{
+        width: 80%; 
+        margin: 0 auto;
+    }
+    h1{
+        color: white;
+    }
+    //Header
+    
+    //Header End
+    //About Me
+    #aboutMe{
+        h1{
+            font-size: 32px;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+    }
+         #title{
+          margin-top: 20px;
+          margin-bottom: 30px; 
+          }
+         button{
+            width: 100%;
+            font-size: 1.1em;
+        }
+    //About Me End
+
+
+//Skills
+
+#skills_grid{
+    grid-template-columns: 100%;
+}
+//END SKILLS
+
+
+//Contact Me
+
+#contactMe{
+    img{
+        display: none;
+   }
+   button{
+       width: 100%;
+   }
+   hr{
+   grid-column: 1/2;
+}
+}
+#contact_grid{
+    grid-template-columns: 100%;
+    #para{
+        grid-column: 1/2;
+    }
+    #one{
+        grid-column: 1/2;
+    }
+    #two{
+        grid-column: 1/2;
+    }
+    
+}
+//End ContactMe
+//LOCATION 
+
+.location-grid{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+
+//END LOCATION 
+  }
+  
+
+//Smaller than 910px
 @media only screen and (max-width: 910px) {
     //Header Section
     header{
@@ -398,23 +452,20 @@ footer{
                 border-bottom: none;
                 padding: 5px;
             }
-       
         }
-
         #header-icon{
             height: 70px;
             width: 70px;
         }
     }
-
     //About Me
     #aboutMe{
         h1{
             font-size: 52px;
             margin-bottom: 5px;
             margin-top: 10px;
-        }}
-
+        }
+    }
 button{
     width: 66%;
     font-size: 1.1em;
@@ -486,80 +537,8 @@ button{
 //End ContactMe
   }
 
-  
-/////////////////////////////////////////////////////////////////////////////////
-// SMALLER
-@media only screen and (max-width: 510px) {
-    
-    
-    //Header
-    
-    //Header End
-    //About Me
-    #aboutMe{
-        h1{
-            font-size: 32px;
-            margin-bottom: 5px;
-            margin-top: 10px;
-        }}
-    #title{
-        margin-top: 20px;
-        margin-bottom: 30px; 
-    }
-button{
-    width: 100%;
-    font-size: 1.1em;
-    }
-    //About Me End
 
-
-//Skills
-
-#skills_grid{
-    grid-template-columns: 100%;
-}
-//END SKILLS
-
-
-//Contact Me
-
-#contactMe{
-    img{
-        display: none;
-   }
-   button{
-       width: 100%;
-   }
-   hr{
-   grid-column: 1/2;
-}
-}
-#contact_grid{
-    grid-template-columns: 100%;
-    #para{
-        grid-column: 1/2;
-    }
-    #one{
-        grid-column: 1/2;
-    }
-    #two{
-        grid-column: 1/2;
-    }
-    
-}
-//End ContactMe
-//LOCATION 
-
-.location-grid{
-    display: grid;
-    grid-template-columns: 100%;
-}
-
-
-//END LOCATION 
-  }
-  
-  //Largest Screen
+//Larger than 1820px
   //Skills
   @media only screen and (min-width: 1820px) {
     #projects_grid{

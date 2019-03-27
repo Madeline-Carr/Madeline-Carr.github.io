@@ -2,3 +2,13 @@
     background-position: center; 
     background-size: cover; 
 }
+
+@mixin button{
+    border:  3px solid white;
+    padding: 10px;
+    font-size: 1.1em;
+    a{
+        color: white;
+    }
+}
+
