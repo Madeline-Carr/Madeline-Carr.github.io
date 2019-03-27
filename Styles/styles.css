@@ -149,8 +149,8 @@ button {
 
 #skills_grid {
   display: grid;
-  grid-template-columns: 28% 28% 28%;
-  grid-column-gap: 3%;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 5%;
   grid-row-gap: 20px; }
   #skills_grid hr {
     border: 1px solid #eacc31; }
