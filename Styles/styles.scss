@@ -208,8 +208,8 @@ button{
 }
 #skills_grid{
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-column-gap: 5%;
+    grid-template-columns: 28% 28% 28%;
+    grid-column-gap: 3%;
     grid-row-gap: 20px;
     hr {
         border: 1px solid $gold;
@@ -331,8 +331,8 @@ button{
 
 #contact_grid{
     display: grid;
-    grid-template-columns: 30% 30% 40%;
-    grid-column-gap: 25px;
+    grid-template-columns: 29% 29% 38%;
+    grid-column-gap: 2%;
     grid-row-gap: 10px;
     #para{
         grid-column: 1/3;
@@ -441,7 +441,8 @@ button{
         //Skills
 
 #skills_grid{
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
 }
 //END SKILLS
 
@@ -552,7 +553,6 @@ button{
 .location-grid{
     display: grid;
     grid-template-columns: 100%;
-    grid-column-gap: 25px;
 }
 
 
