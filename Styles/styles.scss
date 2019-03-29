@@ -2,6 +2,7 @@
 
 @import 'variables';
 @import 'mixins';
+@import 'mediaQueries';
 
 //General 
 body{
@@ -341,6 +342,7 @@ footer{
         font-size: 13px;
     }
 }
+
 
 // MEDIA QUERIES
   
