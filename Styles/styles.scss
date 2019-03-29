@@ -344,85 +344,6 @@ footer{
 
 // MEDIA QUERIES
   
-// Smaller than 510px
-@media only screen and (max-width: 510px) {
-    
-    .container{
-        width: 80%; 
-        margin: 0 auto;
-    }
-    h1{
-        color: white;
-    }
-    //Header
-    
-    //Header End
-    //About Me
-    #aboutMe{
-        h1{
-            font-size: 32px;
-            margin-bottom: 5px;
-            margin-top: 10px;
-        }
-    }
-         #title{
-          margin-top: 20px;
-          margin-bottom: 30px; 
-          }
-         button{
-            width: 100%;
-            font-size: 1.1em;
-        }
-    //About Me End
-
-
-//Skills
-
-#skills_grid{
-    grid-template-columns: 100%;
-}
-//END SKILLS
-
-
-//Contact Me
-
-#contactMe{
-    img{
-        display: none;
-   }
-   button{
-       width: 100%;
-   }
-   hr{
-   grid-column: 1/2;
-}
-}
-#contact_grid{
-    grid-template-columns: 100%;
-    #para{
-        grid-column: 1/2;
-    }
-    #one{
-        grid-column: 1/2;
-    }
-    #two{
-        grid-column: 1/2;
-    }
-    
-}
-//End ContactMe
-//LOCATION 
-
-.location-grid{
-    display: grid;
-    grid-template-columns: 100%;
-}
-
-
-//END LOCATION 
-  }
-  
-
 //Smaller than 910px
 @media only screen and (max-width: 910px) {
     //Header Section
@@ -536,6 +457,88 @@ button{
 }
 //End ContactMe
   }
+
+
+
+// Smaller than 510px
+@media only screen and (max-width: 510px) {
+    
+    .container{
+        width: 80%; 
+        margin: 0 auto;
+    }
+    h1{
+        color: white;
+    }
+    //Header
+    
+    //Header End
+    //About Me
+    #aboutMe{
+        h1{
+            font-size: 32px;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+    }
+         #title{
+          margin-top: 20px;
+          margin-bottom: 30px; 
+          }
+         button{
+            width: 100%;
+            font-size: 1.1em;
+        }
+    //About Me End
+
+
+//Skills
+
+#skills_grid{
+    grid-template-columns: 100%;
+    grid-column-gap: 0%;
+}
+//END SKILLS
+
+
+//Contact Me
+
+#contactMe{
+    img{
+        display: none;
+   }
+   button{
+       width: 100%;
+   }
+   hr{
+   grid-column: 1/2;
+}
+}
+#contact_grid{
+    grid-template-columns: 100%;
+    #para{
+        grid-column: 1/2;
+    }
+    #one{
+        grid-column: 1/2;
+    }
+    #two{
+        grid-column: 1/2;
+    }
+    
+}
+//End ContactMe
+//LOCATION 
+
+.location-grid{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+
+//END LOCATION 
+  }
+  
 
 
 //Larger than 1820px
