@@ -1,8 +1,8 @@
 //sass --watch Styles/styles.scss:Styles/styles.css
-
+//@import 'mediaQueries';
 @import 'variables';
 @import 'mixins';
-@import 'mediaQueries';
+
 
 //General 
 body{
@@ -344,8 +344,10 @@ footer{
 }
 
 
+
 // MEDIA QUERIES
-  
+
+
 //Smaller than 910px
 @media only screen and (max-width: 910px) {
     //Header Section
@@ -461,7 +463,6 @@ button{
   }
 
 
-
 // Smaller than 510px
 @media only screen and (max-width: 510px) {
     
@@ -540,8 +541,6 @@ button{
 
 //END LOCATION 
   }
-  
-
 
 //Larger than 1820px
   //Skills
