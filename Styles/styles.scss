@@ -343,11 +343,7 @@ footer{
     }
 }
 
-
-
 // MEDIA QUERIES
-
-
 //Smaller than 910px
 @media only screen and (max-width: 910px) {
     //Header Section
@@ -554,6 +550,26 @@ button{
             padding: 10px;
         }
     }
+
+  }
+
+//Larger than 2020px
+  //Skills
+  @media only screen and (min-width: 2020px) {
+      .container{
+          width: 60%;
+      }
+
+    //Contact Me
+    #contactMe{
+        img{
+            width:20%;
+            }
+        hr{
+            grid-column: 1/4;
+            }
+        }
+    //End ContactMe
 
   }
   //End Skills

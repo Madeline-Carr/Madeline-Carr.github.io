@@ -390,5 +390,13 @@ footer {
     grid-row-gap: 3.33%; }
     #projects_grid div {
       padding: 10px; } }
+@media only screen and (min-width: 2020px) {
+  .container {
+    width: 60%; }
+
+  #contactMe img {
+    width: 20%; }
+  #contactMe hr {
+    grid-column: 1/4; } }
 
 /*# sourceMappingURL=styles.css.map */
