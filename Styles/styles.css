@@ -67,7 +67,7 @@ header {
 
 #aboutMe {
   background-color: #43c7f2;
-  background-image: url(/Assets/TopClouds.svg), url(/Assets/MiddleClouds.svg), url(/Assets/BottomClouds.svg);
+  background-image: url(/Assets/TopClouds.svg), url(/Assets/MiddleClouds.svg), url(/Assets/BackClouds.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -113,7 +113,9 @@ button {
   grid-column-gap: 2%;
   grid-row-gap: 20px; }
   #projects_grid div {
-    padding: 10px; }
+    padding: 13px; }
+    #projects_grid div .info {
+      padding: 5px 0px 10px 0px; }
 
 .projectCard {
   border-radius: 4px;
@@ -122,8 +124,6 @@ button {
   background-color: white; }
   .projectCard img {
     width: 100%; }
-  .projectCard .info {
-    padding: 5px; }
   .projectCard a {
     color: #43c7f2;
     float: right; }
