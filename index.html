@@ -1,284 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <link
+      rel="icon"
+      href="./Assets/myIcon-01.jpg"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:700"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="Styles/styles.css">
-  <link rel="icon" href="./Assets/myIcon-01.jpg" type="image/gif" sizes="16x16">
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Madeline Carr</title>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  </head>
 
-  <title>Madeline Carr</title>
-  <!-- JQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"> </script>
-</head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div id="iconContainer">
+          <a href="#aboutMe">
+            <img src="Assets/myIcon.jpg" alt="Me" id="header-icon" />
+          </a>
+        </div>
 
-<body>
-
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <div id="iconContainer">
-        <a href="#aboutMe">
-          <img src="Assets/myIcon.jpg" alt="Me" id="header-icon">
-        </a>
+        <nav>
+          <ul>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li class="active"><a href="#skills">Skills</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contactMePlace">Contact Me</a></li>
+          </ul>
+        </nav>
       </div>
+    </header>
 
-      <nav>
-        <ul>
-          <li><a href="#aboutMe">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li class="active"><a href="#skills">Skills</a></li>
-          <li><a href="#location">Location</a></li>
-          <li><a href="#contactMePlace">Contact Me</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- About Me -->
-  <section id="aboutMe">
-    <div class="container">
-      <div id="title">
-        <h1>Hello, I am</h1>
-        <h1>Madeline Carr!</h1>
-        <h2>I am a web developer based in Richmond, VA.</h2>
-      </div>
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque ut blanditiis illo, harum autem
-          tempore. Illo, nesciunt, quam optio molestiae saepe consequuntur voluptatem esse placeat alias, architecto
-          pariatur explicabo?</p>
-        <!--  
+    <!-- About Me -->
+    <section id="aboutMe">
+      <div class="container">
+        <div id="title">
+          <h1>Hello, I am</h1>
+          <h1>Madeline Carr!</h1>
+          <h2>I am a web developer based in Richmond, VA.</h2>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            doloremque ut blanditiis illo, harum autem tempore. Illo, nesciunt,
+            quam optio molestiae saepe consequuntur voluptatem esse placeat
+            alias, architecto pariatur explicabo?
+          </p>
+          <!--  
         <img src="./Assets/me.png" alt="It's me!">
           -->
-        <button id="dowlnoad">
-          <a href="mailto:madelinencarr@Gmail.com?Subject=Hello" target="_top">
-            <i class="fas fa-paper-plane"></i> Email Me!
-          </a>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="test">
-    <div class="space"></div>
-    <div class="container">
-      <h2>Projects</h2>
-      <hr>
-      <div id="projects_grid">
-        <!-- Project One -->
-        <div class="projectCard">
-          <div class="info">
-            <h3>My Website</h3>
-            <a href="https://github.com/Madeline-Carr" target="_blank"><i class="fab fa-github-square fa-lg"></i></a>
-          </div>
-          <img src="./Assets/placeholder.png" alt="">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum sint quam corporis. Nesciunt nihil saepe
-            assumenda adipisci quis pariatur impedit quia perspiciatis, minima, iste libero aliquam quae neque fugit
-            accusamus.
-          </p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis pariatur sequi? Minima dolorem
-            odio ullam aspernatur fuga obcaecati dolor deserunt hic recusandae ratione exercitationem, earum est error
-            maxime? Accusantium.</p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>SASS</li>
-          </ul>
-        </div>
-        <!-- Project Two -->
-        <div class="projectCard">
-          <div class="info">
-            <h3>My Website</h3>
-            <a href="https://github.com/Madeline-Carr" target="_blank"><i class="fab fa-github-square fa-lg"></i></a>
-          </div>
-          <img src="./Assets/placeholder.png" alt="">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum sint quam corporis. Nesciunt nihil saepe
-            assumenda adipisci quis pariatur impedit quia perspiciatis, minima, iste libero aliquam quae neque fugit
-            accusamus.
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>SASS</li>
-          </ul>
-        </div>
-        <!-- Project Three -->
-        <div class="projectCard">
-          <div class="info">
-            <h3>My Website</h3>
-            <a href="https://github.com/Madeline-Carr" target="_blank"><i class="fab fa-github-square fa-lg"></i></a>
-          </div>
-          <img src="./Assets/placeholder.png" alt="">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum sint quam corporis. Nesciunt nihil saepe
-            assumenda adipisci quis pariatur impedit quia perspiciatis, minima, iste libero aliquam quae neque fugit
-            accusamus.
-          </p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>SASS</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <div class="space"></div>
-
-    <div class="container">
-      <h2>My Skills</h2>
-      <div id="skills_grid">
-        <!-- Gold -->
-        <div>
-          <img src="./Assets/Coins/gold.png" alt="Gold">
-          <h2 class="gold">GOLD</h2>
-          <hr>
-          <p>A golden skill is something I am comfortable working on a large project with.</p>
-          <hr>
-          <ul>
-            <li>Git / GitHub</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>CSS Grid and FlexBox</li>
-            <li>SASS</li>
-            <li>Javascript ES6</li>
-            <li>Adobe Illustrator</li>
-          </ul>
-        </div>
-        <!-- Silver -->
-        <div>
-          <img src="./Assets/Coins/silver.png" alt="Silver">
-          <h2 class="silver">SILVER</h2>
-          <hr>
-          <p>A silver skill is something I am comfortable working on projects with but I might use more
-            reasources as I work.</p>
-          <hr>
-          <ul>
-            <li>React.js</li>
-            <li>MySQL</li>
-            <li>Bootstrap 3 & 4</li>
-            <li>Adobe Photoshop</li>
-            <li>PHP 7</li>
-          </ul>
-        </div>
-        <!-- Bronze -->
-        <div>
-          <img src="./Assets/Coins/bronze.png" alt="Bronze">
-          <h2 class="gold">BRONZE</h2>
-          <hr>
-          <p>A bronze skill is something I am new at but am working on. I know the basics but it might take me a while
-            to do more complex things.
-          </p>
-          <hr>
-          <ul>
-            <li>Adobe XD</li>
-            <li>Node</li>
-            <li>Webpack</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Location -->
-  <section id="location">
-    <div class="space"></div>
-
-    <div class="container location-grid">
-      <div id="locationText">
-        <h2>Location</h2>
-        <hr>
-        <h3>Richmond, Virginia. </h3>
-        <p>I have lived here for five years and I have graduated from Virginia Commonwealth University which is located
-          in Richmond.
-        </p>
-      </div>
-      <div id="map"></div>
-
-    </div>
-    <div id="contactMePlace"></div>
-  </section>
-
-  <!-- Contact Me -->
-
-  <section id="contactMe">
-
-    <div class="container">
-      <h2>Contact Me</h2>
-
-      <div id="contact_grid">
-        <hr>
-
-        <div id="para">
-          <p>If you have a project in mind or just want to ask a question feel free to message me! </p>
-        </div>
-        <div id="one">
-          <h3>Email:</h3>
-          <p>MadelineNCarr@Gmail.com</p>
-
           <button id="dowlnoad">
-            <a href="mailto:madelinencarr@Gmail.com?Subject=Hello" target="_top">
+            <a
+              href="mailto:madelinencarr@Gmail.com?Subject=Hello"
+              target="_top"
+            >
               <i class="fas fa-paper-plane"></i> Email Me!
             </a>
           </button>
-
-          <!-- Resume Download -->
-          <h3>Resume:</h3>
-          <button id="dowlnoad">
-            <a href="/Assets/MadelineCarrResume.jpg" download>
-              <i class="fa fa-download"></i> Download Resume
-            </a>
-          </button>
-
-        </div>
-        <div id="two">
-          <img src="./Assets/Desktop-01.png" alt="" id="desktop">
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <div id="footer" class="container">
-      <h2>You can also find me here!</h2>
-
-      <div id="social">
-        <a href="https://github.com/Madeline-Carr" target="_blank"><i class="fab fa-github-square fa-lg"></i></a>
-        <a href="https://www.linkedin.com/in/madeline-carr-19204a142/" target="_blank"><i
-            class="fab fa-linkedin fa-lg"></i></a>
-        <a href="https://dribbble.com/MadelineCarr" target="_blank"><i class="fab fa-dribbble-square fa-lg"></i></a>
-        <a href="https://www.instagram.com/" target="_blank">
-          <i class="fab fa-instagram fa-lg"></i></a>
-        <!-- Email -->
-        <a href="mailto:madelinencarr@Gmail.com?Subject=Hello"><i class="fas fa-envelope-square fa-lg"></i></a>
-
-
-        <p>Copyright © 2019 Madeline Carr • Richmond based Web Developer</p>
+    <!-- Projects -->
+    <section id="projects" class="test">
+      <div class="space"></div>
+      <div class="container">
+        <h2>Projects</h2>
+        <hr />
+        <div id="projects_grid">
+          <!-- Project One -->
+          <div class="projectCard">
+            <div class="info">
+              <h3>My Website</h3>
+              <a href="https://github.com/Madeline-Carr" target="_blank"
+                ><i class="fab fa-github-square fa-lg"></i
+              ></a>
+            </div>
+            <img src="./Assets/placeholder.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum sint
+              quam corporis. Nesciunt nihil saepe assumenda adipisci quis
+              pariatur impedit quia perspiciatis, minima, iste libero aliquam
+              quae neque fugit accusamus.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+              blanditiis pariatur sequi? Minima dolorem odio ullam aspernatur
+              fuga obcaecati dolor deserunt hic recusandae ratione
+              exercitationem, earum est error maxime? Accusantium.
+            </p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>SASS</li>
+            </ul>
+          </div>
+          <!-- Project Two -->
+          <div class="projectCard">
+            <div class="info">
+              <h3>My Website</h3>
+              <a href="https://github.com/Madeline-Carr" target="_blank"
+                ><i class="fab fa-github-square fa-lg"></i
+              ></a>
+            </div>
+            <img src="./Assets/placeholder.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum sint
+              quam corporis. Nesciunt nihil saepe assumenda adipisci quis
+              pariatur impedit quia perspiciatis, minima, iste libero aliquam
+              quae neque fugit accusamus.
+            </p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>SASS</li>
+            </ul>
+          </div>
+          <!-- Project Three -->
+          <div class="projectCard">
+            <div class="info">
+              <h3>My Website</h3>
+              <a href="https://github.com/Madeline-Carr" target="_blank"
+                ><i class="fab fa-github-square fa-lg"></i
+              ></a>
+            </div>
+            <img src="./Assets/placeholder.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum sint
+              quam corporis. Nesciunt nihil saepe assumenda adipisci quis
+              pariatur impedit quia perspiciatis, minima, iste libero aliquam
+              quae neque fugit accusamus.
+            </p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>SASS</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- JavaScript & Map -->
-  <script src="index.js"></script>
-  <script src="./map.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7qQXZwLt2cimM0skOmt0GoV7z_awid64
-  &callback=initMap"></script>
-</body>
+    <!-- Skills -->
+    <section id="skills">
+      <div class="space"></div>
 
+      <div class="container">
+        <h2>My Skills</h2>
+        <div id="skills_grid">
+          <!-- Gold -->
+          <div>
+            <img src="./Assets/Coins/gold.png" alt="Gold" />
+            <h2 class="gold">GOLD</h2>
+            <hr />
+            <p>
+              A golden skill is something I am comfortable working on a large
+              project with.
+            </p>
+            <hr />
+            <ul>
+              <li>Git / GitHub</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>CSS Grid and FlexBox</li>
+              <li>SASS</li>
+              <li>Javascript ES6</li>
+              <li>Adobe Illustrator</li>
+            </ul>
+          </div>
+          <!-- Silver -->
+          <div>
+            <img src="./Assets/Coins/silver.png" alt="Silver" />
+            <h2 class="silver">SILVER</h2>
+            <hr />
+            <p>
+              A silver skill is something I am comfortable working on projects
+              with but I might use more reasources as I work.
+            </p>
+            <hr />
+            <ul>
+              <li>React.js</li>
+              <li>MySQL</li>
+              <li>Bootstrap 3 & 4</li>
+              <li>Adobe Photoshop</li>
+              <li>PHP 7</li>
+            </ul>
+          </div>
+          <!-- Bronze -->
+          <div>
+            <img src="./Assets/Coins/bronze.png" alt="Bronze" />
+            <h2 class="gold">BRONZE</h2>
+            <hr />
+            <p>
+              A bronze skill is something I am new at but am working on. I know
+              the basics but it might take me a while to do more complex things.
+            </p>
+            <hr />
+            <ul>
+              <li>Adobe XD</li>
+              <li>Node</li>
+              <li>Webpack</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section id="location">
+      <div class="space"></div>
+
+      <div class="container location-grid">
+        <div id="locationText">
+          <h2>Location</h2>
+          <hr />
+          <h3>Richmond, Virginia.</h3>
+          <p>
+            I have lived here for five years and I have graduated from Virginia
+            Commonwealth University which is located in Richmond.
+          </p>
+        </div>
+        <div id="map"></div>
+      </div>
+      <div id="contactMePlace"></div>
+    </section>
+
+    <!-- Contact Me -->
+
+    <section id="contactMe">
+      <div class="container">
+        <h2>Contact Me</h2>
+
+        <div id="contact_grid">
+          <hr />
+
+          <div id="para">
+            <p>
+              If you have a project in mind or just want to ask a question feel
+              free to message me!
+            </p>
+          </div>
+          <div id="one">
+            <h3>Email:</h3>
+            <p>MadelineNCarr@Gmail.com</p>
+
+            <button id="dowlnoad">
+              <a
+                href="mailto:madelinencarr@Gmail.com?Subject=Hello"
+                target="_top"
+              >
+                <i class="fas fa-paper-plane"></i> Email Me!
+              </a>
+            </button>
+
+            <!-- Resume Download -->
+            <h3>Resume:</h3>
+            <button id="dowlnoad">
+              <a href="/Assets/MadelineCarrResume.jpg" download>
+                <i class="fa fa-download"></i> Download Resume
+              </a>
+            </button>
+          </div>
+          <div id="two">
+            <img src="./Assets/Desktop-01.png" alt="" id="desktop" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div id="footer" class="container">
+        <h2>You can also find me here!</h2>
+
+        <div id="social">
+          <a href="https://github.com/Madeline-Carr" target="_blank"
+            ><i class="fab fa-github-square fa-lg"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/madeline-carr-19204a142/"
+            target="_blank"
+            ><i class="fab fa-linkedin fa-lg"></i
+          ></a>
+          <a href="https://dribbble.com/MadelineCarr" target="_blank"
+            ><i class="fab fa-dribbble-square fa-lg"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram fa-lg"></i
+          ></a>
+          <!-- Email -->
+          <a href="mailto:madelinencarr@Gmail.com?Subject=Hello"
+            ><i class="fas fa-envelope-square fa-lg"></i
+          ></a>
+
+          <p>Copyright © 2019 Madeline Carr • Richmond based Web Developer</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript & Map -->
+    <script src="index.js"></script>
+    <script src="./map.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7qQXZwLt2cimM0skOmt0GoV7z_awid64
+  &callback=initMap"
+    ></script>
+  </body>
 </html>
