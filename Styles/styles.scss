@@ -21,6 +21,7 @@ body {
 a {
   text-decoration: none;
 }
+
 /*
 .svg {
   pointer-events: none;
@@ -160,10 +161,10 @@ button {
     padding: 5px;
   }
   a {
-    color: black;
+    color: $light_blue;
     float: right;
     &:hover {
-      color: $light_blue;
+      color: $light_red;
     }
   }
   h3 {
@@ -171,8 +172,22 @@ button {
     display: inline;
   }
   i {
-    font-size: 2em;
+    font-size: 3em;
     display: inline;
+  }
+}
+
+#largeButton {
+  width: 70%;
+  border: 0px;
+  text-align: center;
+  a {
+    float: none;
+    color: white;
+  }
+  &:hover {
+    color: $super_dark_blue;
+    background-color: $light_red;
   }
 }
 

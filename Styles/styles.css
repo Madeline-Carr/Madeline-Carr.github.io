@@ -125,16 +125,27 @@ button {
   .projectCard .info {
     padding: 5px; }
   .projectCard a {
-    color: black;
+    color: #43c7f2;
     float: right; }
     .projectCard a:hover {
-      color: #43c7f2; }
+      color: #ef3d36; }
   .projectCard h3 {
     font-size: 1.5em;
     display: inline; }
   .projectCard i {
-    font-size: 2em;
+    font-size: 3em;
     display: inline; }
+
+#largeButton {
+  width: 70%;
+  border: 0px;
+  text-align: center; }
+  #largeButton a {
+    float: none;
+    color: white; }
+  #largeButton:hover {
+    color: #030b11;
+    background-color: #ef3d36; }
 
 #skills {
   background: url(/Assets/clouds-01.png);
