@@ -1,575 +1,575 @@
 //sass --watch Styles/styles.scss:Styles/styles.css
 //@import 'mediaQueries';
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
-
-//General 
-body{
-    padding: 0;
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-    position: relative
+//General
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  position: relative;
 }
-.space{
-    min-height: 60px;
+.space {
+  min-height: 60px;
 }
-
-.container{
-    width: 70%; 
-    margin: 0 auto;
+.container {
+  width: 70%;
+  margin: 0 auto;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-
+/*
+.svg {
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+*/
 
 //Header
-header{
-    //Do not Delete z-index. It is used to make the header appear on top of the map.
-    z-index: 1;
-    position: fixed;
-    width: 100%;
-    padding: 20px 0 20px 0;
-    background-color: black;
+header {
+  //Do not Delete z-index. It is used to make the header appear on top of the map.
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  background-color: black;
+  color: white;
+  border-bottom: 5px solid $light_red;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.25);
+  nav {
+    display: inline;
+  }
+  ul {
+    list-style-type: none;
+    float: right;
+  }
+  li {
+    display: inline;
+    padding-left: 40px;
+
+    font-size: 1.1em;
+    transition: all 0.2s ease-in-out;
+    .active {
+      font-size: 1.1em;
+      padding: 5px;
+      border-bottom: 2px solid $light_red;
+      color: $light_red;
+    }
+  }
+  a {
+    text-decoration: none;
     color: white;
-    border-bottom: 5px solid $light_red;
-    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.25);
-    nav{
-        display: inline;
-    }
-    ul{
-        list-style-type: none;
-        float: right;
-    }
-    li{
-        display: inline;
-        padding-left: 40px;
-        
-        font-size: 1.1em;
-        transition: all 0.2s ease-in-out;
-        .active{
-            font-size: 1.1em;
-            padding: 5px;
-            border-bottom: 2px solid $light_red;
-            color: $light_red;
-
-        }
-    }
-    a{ text-decoration: none;
-        color: white;
-        &:hover {
-            color:$light_blue;
-            
-        }
-    }
-    #iconContainer{
-        float: left;
-        width: 25px;
-    }
-}
-
-#header-icon{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: 3px solid white;
-
     &:hover {
-        border: 3px solid $light_blue;
-        transition: all 0.3s ease 0s;
+      color: $light_blue;
     }
+  }
+  #iconContainer {
+    float: left;
+    width: 25px;
+  }
 }
 
+#header-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+
+  &:hover {
+    border: 3px solid $light_blue;
+    transition: all 0.3s ease 0s;
+  }
+}
 //About Me Section
-#aboutMe{
-    background-image: url(/Assets/clouds-01.png);
-    @include backgroundTexture;
-    margin: 0 0 15px 0 ;
-    color: $super_dark_blue;
-   
-    
-      
-    background-color: $light_blue;
-    padding: 250px 0 130px 0;
+#aboutMe {
+  background-color: $light_blue;
+  background-image: url(/Assets/TopClouds.svg), url(/Assets/MiddleClouds.svg),
+    url(/Assets/BottomClouds.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin: 0 0 15px 0;
+  color: $super_dark_blue;
+  position: relative;
+  padding: 250px 0 130px 0;
 
-    h1{
-        font-size: 70px;
-       font-weight: bold;
-        margin-bottom: 10px;
-        margin-top: 20px;
-    }
-    
+  h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
 }
-#title{
-        margin-top: 80px;
-        margin-bottom: 30px;
+#title {
+  margin-top: 80px;
+  margin-bottom: 30px;
 }
 
-button{
-    @include button;
-    background-color: $light_blue;
-    width: 33%;
-    
-    &:hover{
-        transition: all 0.4s ease 0s;
+button {
+  @include button;
+  background-color: $light_blue;
+  width: 33%;
 
-        a{
-            color: $light_blue;
-           }
-        background-color: white;
-        color: $light_blue;
+  &:hover {
+    transition: all 0.4s ease 0s;
+
+    a {
+      color: $light_blue;
     }
+    background-color: white;
+    color: $light_blue;
+  }
 }
 
 //Projects
 
-#projects{
-    padding: 30px 0px; 
-    background-color: $super_dark_blue;
-    color: white;
-    h2{
-        font-size: 2em;
-    }
+#projects {
+  padding: 30px 0px;
+  background-color: $super_dark_blue;
+  color: white;
+  h2 {
+    font-size: 2em;
+  }
 }
-#projects_grid{
-    display: grid;
-    grid-template-columns: 49% 49%;
-    grid-column-gap: 2%;
-    grid-row-gap: 20px;
-    div{
-        padding: 10px;
-    }
+#projects_grid {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-column-gap: 2%;
+  grid-row-gap: 20px;
+  div {
+    padding: 10px;
+  }
 }
 
-.projectCard{
-   //width: 50%;
-   border-radius: 4px;
-   color: $super_dark_blue;
-   padding: 0px;
-    background-color: white;
-    img{
-        width: 100%;
+.projectCard {
+  //width: 50%;
+  border-radius: 4px;
+  color: $super_dark_blue;
+  padding: 0px;
+  background-color: white;
+  img {
+    width: 100%;
+  }
+  .info {
+    padding: 5px;
+  }
+  a {
+    color: black;
+    float: right;
+    &:hover {
+      color: $light_blue;
     }
-    .info{
-        padding: 5px;
-    }
-    a{
-        color: black;
-        float: right;
-        &:hover{
-            color:$light_blue;}
-    }
-    h3{font-size: 1.5em;
-        display: inline;}
-    i{
-        font-size: 2em;
-        display: inline;
-    }
+  }
+  h3 {
+    font-size: 1.5em;
+    display: inline;
+  }
+  i {
+    font-size: 2em;
+    display: inline;
+  }
 }
-    
+
 //Skills
 
-#skills{
-    background: url(/Assets/clouds-01.png);
-    @include backgroundTexture;
-    background-blend-mode: hard-light;
-    padding: 30px 0px; 
-    text-align: center;
+#skills {
+  background: url(/Assets/clouds-01.png);
+  @include backgroundTexture;
+  background-blend-mode: hard-light;
+  padding: 30px 0px;
+  text-align: center;
+  color: white;
+  background-color: $super_dark_blue;
+  margin: 15px 0 15px 0;
+  h2 {
     color: white;
-    background-color: $super_dark_blue;
-    margin: 15px 0 15px 0 ;
-    h2{
-        color: white;
-        
-            font-size: 2em;
-    }
-    ul {
-        list-style-type: none;
-        padding: 0px;
-      }
-      li{
-          padding: 6px;}
-      img{
-        width: 40%;
-        padding-top:15px;
-    }
+
+    font-size: 2em;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0px;
+  }
+  li {
+    padding: 6px;
+  }
+  img {
+    width: 40%;
+    padding-top: 15px;
+  }
 }
-#skills_grid{
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-column-gap: 5%;
-    grid-row-gap: 20px;
-    hr {
-        border: 1px solid $gold;
-    }
-    div{
-        border: 8px solid $gold;
-        background-color: $dark_blue;
-        padding: 20px;
-        border-radius: 10px;}
-    .gold{
-        color: $gold;
-    }
-    .silver{
-        color: silver;
-        border-color: silver;
-    }
+#skills_grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 5%;
+  grid-row-gap: 20px;
+  hr {
+    border: 1px solid $gold;
+  }
+  div {
+    border: 8px solid $gold;
+    background-color: $dark_blue;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .gold {
+    color: $gold;
+  }
+  .silver {
+    color: silver;
+    border-color: silver;
+  }
 }
 
 //Location
 
-#location{
-    background: url(/Assets/Brick-01.png);
-    background-blend-mode: soft-light;
-    @include backgroundTexture;
-    background-color: $super_dark_blue;
-    padding: 50px 0 50px 0;
-    h2{
-        color: white;
-        font-size: 2em;
-        margin-top: 0px;
-    }
-    h3{
-        color: $light_red;
-    }
-    p{
-        color: aliceblue;
-    }
+#location {
+  background: url(/Assets/Brick-01.png);
+  background-blend-mode: soft-light;
+  @include backgroundTexture;
+  background-color: $super_dark_blue;
+  padding: 50px 0 50px 0;
+  h2 {
+    color: white;
+    font-size: 2em;
+    margin-top: 0px;
+  }
+  h3 {
+    color: $light_red;
+  }
+  p {
+    color: aliceblue;
+  }
 }
-.location-grid{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-column-gap: 25px;
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 25px;
 }
 
-#locationText{
-    grid-column: 1/2;
+#locationText {
+  grid-column: 1/2;
 }
 #map {
-   width: 100%;
-   min-height: 400px;
-   grid-column: 2/3;
-   margin: 0 auto;
+  width: 100%;
+  min-height: 400px;
+  grid-column: 2/3;
+  margin: 0 auto;
 }
 
 //Contact Me
-#contactMe{
-    //Background 
-    background: url(/Assets/ContactBackground-01.svg);
-    @include backgroundTexture;
-    background-color:$light_red;
-    position: relative;
+#contactMe {
+  //Background
+  background: url(/Assets/ContactBackground-01.svg);
+  @include backgroundTexture;
+  background-color: $light_red;
+  position: relative;
+  width: 100%;
+  color: white;
+  padding: 30px 0 100px 0;
+  margin: 15px 0 15px 0;
+  img {
+    position: absolute;
+    width: 40%;
+    right: 0px;
+    bottom: 0px;
+  }
+  hr {
+    float: left;
     width: 100%;
+    grid-column: 1/4;
+  }
+  h2 {
+    font-size: 2em;
+    color: $super_dark_blue;
+  }
+  h3 {
+    color: $super_dark_blue;
+  }
+  a {
     color: white;
-    padding: 30px 0 100px 0;
-    margin: 15px 0 15px 0 ;
-   img{
-     position:absolute;
-     width:40%;
-     right:0px;
-     bottom:0px;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  button {
+    @include button;
+    background-color: $light_red;
+    width: 90%;
+    &:hover {
+      transition: all 0.4s ease 0s;
+      a {
+        color: $light_red;
+      }
+      background-color: white;
+      color: $light_red;
     }
-    hr{
-        float: left;
-        width: 100%;
-        grid-column: 1/4;
-    }
-    h2{
-        font-size: 2em;
-        color: $super_dark_blue;
-    }
-    h3{
-        color:$super_dark_blue;
-    }
-    a{
-        color: white;
-    }
-    p{
-        font-size: 1.2em;
-    }
-    button{
-        @include button;
-        background-color: $light_red;
-        width: 90%;
-        &:hover{
-            transition: all 0.4s ease 0s;
-            a{
-                color: $light_red;
-               }
-            background-color: white;
-            color: $light_red;
-        }
-    }
+  }
 }
 
-#contact_grid{
-    display: grid;
-    grid-template-columns: 29% 29% 38%;
-    grid-column-gap: 2%;
-    grid-row-gap: 10px;
-    #para{
-        grid-column: 1/3;
-    }
-    #one{
-        grid-column: 1/3;
-    }
-    #two{
-        grid-column: 2/3;
-    }
+#contact_grid {
+  display: grid;
+  grid-template-columns: 29% 29% 38%;
+  grid-column-gap: 2%;
+  grid-row-gap: 10px;
+  #para {
+    grid-column: 1/3;
+  }
+  #one {
+    grid-column: 1/3;
+  }
+  #two {
+    grid-column: 2/3;
+  }
 }
 //Footer
-footer{
-    text-align: center;
-    width: 100%;
-    background-color: #111;
+footer {
+  text-align: center;
+  width: 100%;
+  background-color: #111;
+  color: white;
+  padding: 30px 0 50px 0;
+  #social {
+    font-size: 30px;
+  }
+  a {
     color: white;
-    padding: 30px 0 50px 0;
-    #social{
-        font-size: 30px;
+    &:hover {
+      color: $light_red;
     }
-    a{
-        color: white;
-        &:hover{
-            color:$light_red;}
-    }
-    i{
-        padding: 5px;
-    }
-    p{
-        padding-top: 15px;
-        font-size: 13px;
-    }
+  }
+  i {
+    padding: 5px;
+  }
+  p {
+    padding-top: 15px;
+    font-size: 13px;
+  }
 }
 
 // MEDIA QUERIES
 //Smaller than 910px
 @media only screen and (max-width: 910px) {
-    //Header Section
-    header{
-        #iconContainer{
-            width: 15%;
-            margin-top: 35px;
-        }
-        nav{
-            float: right;
-            width: 85%;
-        }
-        ul{
-            width: 100%;
-            padding: 0px;
-            text-align: right;
+  //Header Section
+  header {
+    #iconContainer {
+      width: 15%;
+      margin-top: 35px;
+    }
+    nav {
+      float: right;
+      width: 85%;
+    }
+    ul {
+      width: 100%;
+      padding: 0px;
+      text-align: right;
 
-            list-style-type: none;
-            float: right;
-        }
-        li{
-            padding: 0px;
-            display: block;
-            width: 100%;
-            .active{
-                font-size: 1em;
-                border-bottom: none;
-                padding: 5px;
-            }
-        }
-        #header-icon{
-            height: 70px;
-            width: 70px;
-        }
+      list-style-type: none;
+      float: right;
     }
-    //About Me
-    #aboutMe{
-        h1{
-            font-size: 52px;
-            margin-bottom: 5px;
-            margin-top: 10px;
-        }
+    li {
+      padding: 0px;
+      display: block;
+      width: 100%;
+      .active {
+        font-size: 1em;
+        border-bottom: none;
+        padding: 5px;
+      }
     }
-button{
+    #header-icon {
+      height: 70px;
+      width: 70px;
+    }
+  }
+  //About Me
+  #aboutMe {
+    h1 {
+      font-size: 52px;
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+  }
+  button {
     width: 66%;
     font-size: 1.1em;
-    }
+  }
 
-    #title{
-        margin-top: 80px;
-        margin-bottom: 30px; 
-    }
+  #title {
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
 
-    //Aboutme End
-//Projects
+  //Aboutme End
+  //Projects
 
-#projects_grid{
+  #projects_grid {
     display: grid;
     grid-template-columns: 100%;
     grid-column-gap: 2%;
     grid-row-gap: 20px;
-    div{
-        padding: 10px;
-    }}
-//End Projects
-        
-        //Skills
+    div {
+      padding: 10px;
+    }
+  }
+  //End Projects
 
-#skills_grid{
+  //Skills
+
+  #skills_grid {
     grid-template-columns: 48% 48%;
     grid-column-gap: 4%;
-}
-//END SKILLS
+  }
+  //END SKILLS
 
-//LOCATION 
+  //LOCATION
 
-.location-grid{
+  .location-grid {
     grid-template-columns: 100%;
     grid-column-gap: 0px;
-
-}
-
-#locationText{
-    grid-column: 1/3;
-}
-#map {
-   grid-column: 1/3;
-  
-}
-//END LOCATION 
-//Contact Me
-#contactMe{
-    img{
-        width:40%;
-        bottom: 15%;
-       // top: 53%;
-   }
-}
-
-#contact_grid{
-    #para{
-        grid-column: 1/4;
-    }
-    #one{
-        grid-column: 1/3;
-    }
-    #two{
-        grid-column: 1/3;
-    }
-    
-}
-//End ContactMe
   }
 
+  #locationText {
+    grid-column: 1/3;
+  }
+  #map {
+    grid-column: 1/3;
+  }
+  //END LOCATION
+  //Contact Me
+  #contactMe {
+    img {
+      width: 40%;
+      bottom: 15%;
+      // top: 53%;
+    }
+  }
+
+  #contact_grid {
+    #para {
+      grid-column: 1/4;
+    }
+    #one {
+      grid-column: 1/3;
+    }
+    #two {
+      grid-column: 1/3;
+    }
+  }
+  //End ContactMe
+}
 
 // Smaller than 510px
 @media only screen and (max-width: 510px) {
-    
-    .container{
-        width: 80%; 
-        margin: 0 auto;
-    }
-    h1{
-        color: white;
-    }
-    //Header
-    
-    //Header End
-    //About Me
-    #aboutMe{
-        h1{
-            font-size: 32px;
-            margin-bottom: 5px;
-            margin-top: 10px;
-        }
-    }
-         #title{
-          margin-top: 20px;
-          margin-bottom: 30px; 
-          }
-         button{
-            width: 100%;
-            font-size: 1.1em;
-        }
-    //About Me End
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  h1 {
+    color: white;
+  }
+  //Header
 
+  //Header End
+  //About Me
+  #aboutMe {
+    h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+  }
+  #title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  button {
+    width: 100%;
+    font-size: 1.1em;
+  }
+  //About Me End
 
-//Skills
+  //Skills
 
-#skills_grid{
+  #skills_grid {
     grid-template-columns: 100%;
     grid-column-gap: 0%;
-}
-//END SKILLS
+  }
+  //END SKILLS
 
+  //Contact Me
 
-//Contact Me
-
-#contactMe{
-    img{
-        display: none;
-   }
-   button{
-       width: 100%;
-   }
-   hr{
-   grid-column: 1/2;
-}
-}
-#contact_grid{
+  #contactMe {
+    img {
+      display: none;
+    }
+    button {
+      width: 100%;
+    }
+    hr {
+      grid-column: 1/2;
+    }
+  }
+  #contact_grid {
     grid-template-columns: 100%;
-    #para{
-        grid-column: 1/2;
+    #para {
+      grid-column: 1/2;
     }
-    #one{
-        grid-column: 1/2;
+    #one {
+      grid-column: 1/2;
     }
-    #two{
-        grid-column: 1/2;
+    #two {
+      grid-column: 1/2;
     }
-    
-}
-//End ContactMe
-//LOCATION 
+  }
+  //End ContactMe
+  //LOCATION
 
-.location-grid{
+  .location-grid {
     display: grid;
     grid-template-columns: 100%;
+  }
+
+  //END LOCATION
 }
 
-
-//END LOCATION 
-  }
-
 //Larger than 1820px
-  //Skills
-  @media only screen and (min-width: 1820px) {
-    #projects_grid{
-        display: grid;
-        grid-template-columns: 32.333% 32.333% 32.333%;
-        grid-column-gap: 1.333%;
-       grid-row-gap: 3.33%;
-        div{
-            padding: 10px;
-        }
+//Skills
+@media only screen and (min-width: 1820px) {
+  #projects_grid {
+    display: grid;
+    grid-template-columns: 32.333% 32.333% 32.333%;
+    grid-column-gap: 1.333%;
+    grid-row-gap: 3.33%;
+    div {
+      padding: 10px;
     }
-
   }
+}
 
 //Larger than 2020px
-  //Skills
-  @media only screen and (min-width: 2020px) {
-      .container{
-          width: 60%;
-      }
-
-    //Contact Me
-    #contactMe{
-        img{
-            width:20%;
-            }
-        hr{
-            grid-column: 1/4;
-            }
-        }
-    //End ContactMe
-
+//Skills
+@media only screen and (min-width: 2020px) {
+  .container {
+    width: 60%;
   }
-  //End Skills
+
+  //Contact Me
+  #contactMe {
+    img {
+      width: 20%;
+    }
+    hr {
+      grid-column: 1/4;
+    }
+  }
+  //End ContactMe
+}
+//End Skills
