@@ -44,6 +44,7 @@ function onScroll(event) {
   });
 }
 
+//Mobile Navigation
 function myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
@@ -52,3 +53,11 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+$(window).resize(function() {
+  if ($(window).width() > 910) {
+    $("#myLinks").css("display", "block");
+  }
+});
+
+// End Mobile Navigation
