@@ -14,17 +14,19 @@ body {
 a {
   text-decoration: none; }
 
-/*
+.test {
+  position: relative;
+  z-index: 5; }
+
 .svg {
   pointer-events: none;
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 0;
-}
-*/
+  z-index: 1; }
+
 header {
-  z-index: 1;
+  z-index: 10;
   position: fixed;
   width: 100%;
   padding: 20px 0 20px 0;
@@ -67,8 +69,9 @@ header {
 
 #aboutMe {
   background-color: #43c7f2;
-  background-image: url(/Assets/TopClouds.svg), url(/Assets/MiddleClouds.svg), url(/Assets/BackClouds.svg);
+  background-image: url(/Assets/MiddleClouds.svg), url(/Assets/BackClouds.svg);
   background-size: 100%;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: bottom;
   margin: 0 0 15px 0;
@@ -219,6 +222,7 @@ button {
 
 #contactMe {
   background: url(/Assets/ContactBackground-01.svg);
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-color: #ef3d36;
