@@ -41,7 +41,8 @@ header {
     display: block; }
   header ul {
     list-style-type: none;
-    float: right; }
+    float: right;
+    padding-top: 10px; }
   header li {
     display: inline;
     padding-left: 40px;
@@ -317,7 +318,8 @@ footer {
     position: absolute;
     right: 0;
     top: 0;
-    padding-top: 30px; }
+    padding-top: 30px;
+    padding-right: 0; }
 
   header #iconContainer {
     width: 15%;

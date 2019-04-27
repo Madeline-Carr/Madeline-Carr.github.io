@@ -1,3 +1,4 @@
+//Scroll Navigation
 $(document).ready(function() {
   $(document).on("scroll", onScroll);
 
@@ -43,6 +44,7 @@ function onScroll(event) {
     }
   });
 }
+//End Scroll Navigation
 
 //Mobile Navigation
 function myFunction() {
@@ -54,9 +56,13 @@ function myFunction() {
   }
 }
 
+//This makes it so if you resize out of the mobile nav the list will show up.
+//It also makes sure the list does not appear until you hit the icon on mobile devices.
 $(window).resize(function() {
   if ($(window).width() > 910) {
     $("#myLinks").css("display", "block");
+  } else {
+    $("#myLinks").css("display", "none");
   }
 });
 

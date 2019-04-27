@@ -1,0 +1,248 @@
+// MEDIA QUERIES
+//Smaller than 910px
+
+@media only screen and (max-width: 910px) {
+  //Mobile Navigation
+
+  .topnav {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    padding-top: 60px;
+    display: none;
+  }
+
+  .topnav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 30px;
+    padding-right: 0;
+  }
+  //Mobile Navigation
+  //Header Section
+  header {
+    #iconContainer {
+      width: 15%;
+      margin-top: 0px;
+    }
+    nav {
+      float: right;
+      width: 85%;
+    }
+    ul {
+      width: 100%;
+      padding: 0px;
+      text-align: right;
+      list-style-type: none;
+      float: right;
+    }
+    li {
+      padding: 0px;
+      display: block;
+      width: 100%;
+      .active {
+        font-size: 1em;
+        border-bottom: none;
+        padding: 5px;
+      }
+    }
+    #header-icon {
+      height: 50px;
+      width: 50px;
+    }
+  }
+  //About Me
+  #aboutMe {
+    h1 {
+      font-size: 52px;
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+  }
+  button {
+    width: 66%;
+    font-size: 1.1em;
+  }
+
+  #title {
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+
+  //Aboutme End
+  //Projects
+
+  #projects_grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2%;
+    grid-row-gap: 20px;
+    div {
+      padding: 10px;
+    }
+  }
+  //End Projects
+
+  //Skills
+
+  #skills_grid {
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
+  }
+  //END SKILLS
+
+  //LOCATION
+
+  .location-grid {
+    grid-template-columns: 100%;
+    grid-column-gap: 0px;
+  }
+
+  #locationText {
+    grid-column: 1/3;
+  }
+  #map {
+    grid-column: 1/3;
+  }
+  //END LOCATION
+  //Contact Me
+  #contactMe {
+    img {
+      width: 40%;
+      bottom: 15%;
+      // top: 53%;
+    }
+  }
+
+  #contact_grid {
+    #para {
+      grid-column: 1/4;
+    }
+    #one {
+      grid-column: 1/3;
+    }
+    #two {
+      grid-column: 1/3;
+    }
+  }
+  //End ContactMe
+}
+
+// Smaller than 510px
+@media only screen and (max-width: 510px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  h1 {
+    color: white;
+  }
+  //Header
+
+  //Header End
+  //About Me
+  #aboutMe {
+    h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+  }
+  #title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  button {
+    width: 100%;
+    font-size: 1.1em;
+  }
+  //About Me End
+
+  //Skills
+
+  #skills_grid {
+    grid-template-columns: 100%;
+    grid-column-gap: 0%;
+  }
+  //END SKILLS
+
+  //Contact Me
+
+  #contactMe {
+    img {
+      display: none;
+    }
+    button {
+      width: 100%;
+    }
+    hr {
+      grid-column: 1/2;
+    }
+  }
+  #contact_grid {
+    grid-template-columns: 100%;
+    #para {
+      grid-column: 1/2;
+    }
+    #one {
+      grid-column: 1/2;
+    }
+    #two {
+      grid-column: 1/2;
+    }
+  }
+  //End ContactMe
+  //LOCATION
+
+  .location-grid {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  //END LOCATION
+}
+
+//Larger than 1820px
+//Skills
+@media only screen and (min-width: 1820px) {
+  #projects_grid {
+    display: grid;
+    grid-template-columns: 32.333% 32.333% 32.333%;
+    grid-column-gap: 1.333%;
+    grid-row-gap: 3.33%;
+    div {
+      padding: 10px;
+    }
+  }
+}
+
+//Larger than 2020px
+//Skills
+@media only screen and (min-width: 2020px) {
+  .container {
+    width: 60%;
+  }
+
+  //Contact Me
+  #contactMe {
+    img {
+      width: 20%;
+    }
+    hr {
+      grid-column: 1/4;
+    }
+  }
+  //End ContactMe
+}
+//End Skills
