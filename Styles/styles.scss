@@ -26,6 +26,10 @@ a {
   z-index: 5;
 }
 
+.topnav a.icon {
+  display: none;
+}
+
 .svg {
   pointer-events: none;
   position: absolute;
@@ -79,8 +83,8 @@ header {
 }
 
 #header-icon {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   border: 3px solid white;
 
@@ -374,12 +378,40 @@ footer {
 
 // MEDIA QUERIES
 //Smaller than 910px
+
 @media only screen and (max-width: 910px) {
+  //Mobile Navigation
+
+  .topnav {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    padding-top: 60px;
+    display: none;
+  }
+
+  .topnav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 30px;
+  }
+  //Mobile Navigation
   //Header Section
   header {
     #iconContainer {
       width: 15%;
-      margin-top: 35px;
+      margin-top: 0px;
     }
     nav {
       float: right;
@@ -404,8 +436,8 @@ footer {
       }
     }
     #header-icon {
-      height: 70px;
-      width: 70px;
+      height: 50px;
+      width: 50px;
     }
   }
   //About Me

@@ -18,6 +18,9 @@ a {
   position: relative;
   z-index: 5; }
 
+.topnav a.icon {
+  display: none; }
+
 .svg {
   pointer-events: none;
   position: absolute;
@@ -59,8 +62,8 @@ header {
     width: 25px; }
 
 #header-icon {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   border: 3px solid white; }
   #header-icon:hover {
@@ -295,9 +298,30 @@ footer {
     font-size: 13px; }
 
 @media only screen and (max-width: 910px) {
+  .topnav {
+    overflow: hidden;
+    position: relative; }
+
+  .topnav #myLinks {
+    padding-top: 60px;
+    display: none; }
+
+  .topnav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block; }
+
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 30px; }
+
   header #iconContainer {
     width: 15%;
-    margin-top: 35px; }
+    margin-top: 0px; }
   header nav {
     float: right;
     width: 85%; }
@@ -316,8 +340,8 @@ footer {
       border-bottom: none;
       padding: 5px; }
   header #header-icon {
-    height: 70px;
-    width: 70px; }
+    height: 50px;
+    width: 50px; }
 
   #aboutMe h1 {
     font-size: 52px;

@@ -27,14 +27,19 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="container">
+      <div class="container topnav">
         <div id="iconContainer">
           <a href="#aboutMe">
             <img src="Assets/myIcon.jpg" alt="Me" id="header-icon" />
           </a>
         </div>
 
-        <nav>
+        <!-- For Mobile -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars fa-2x	"></i>
+          </a>
+
+        <nav id="myLinks">
           <ul>
             <li><a href="#aboutMe">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -43,19 +48,26 @@
             <li><a href="#contactMePlace">Contact Me</a></li>
           </ul>
         </nav>
+
       </div>
     </header>
+<!-- 
+  <div class="topnav">
+        <a href="#home" class="active">Logo</a>
+        <div id="myLinks">
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+ -->
+    
 
     <!-- About Me -->
     <section id="aboutMe">
-      <!-- 
-        <div class="backgroundSky">
-        <img src="./Assets/DarkBlueGradient-01.svg" alt="" class="svg" />
-        <img src="./Assets/BackClouds.svg" alt="" class="svg" />
-        <img src="./Assets/MiddleClouds.svg" alt="" class="svg" />
-        <img src="./Assets/TopClouds.svg" alt="" class="svg" />
-      </div>
-       -->
 
       <div class="container ">
         <div class="test">
@@ -80,7 +92,7 @@
                   </a>
                 </button>
               </div>
-              
+
         </div>
         
       </div>
