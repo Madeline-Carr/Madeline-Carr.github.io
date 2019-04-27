@@ -1,6 +1,6 @@
 // MEDIA QUERIES
-//Smaller than 910px
 
+//Smaller than 910px
 @media only screen and (max-width: 910px) {
   //Mobile Navigation
 
@@ -137,6 +137,31 @@
     }
   }
   //End ContactMe
+}
+
+// Smaller than 1190px
+
+@media only screen and (max-width: 1190px) {
+  //Mobile Navigation
+  #skills_grid {
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
+  }
+}
+
+// Smaller than 750px
+
+@media only screen and (max-width: 750px) {
+  //Mobile Navigation
+  #skills_grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2%;
+    grid-row-gap: 20px;
+    div {
+      padding: 10px;
+    }
+  }
 }
 
 // Smaller than 510px
