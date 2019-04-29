@@ -13,11 +13,15 @@ $(document).ready(function() {
 
     var target = this.hash;
     $target = $(target);
+    // var height = $("#header").height();
+    var targetOffset = $target.offset().top - 100;
+    // console.log(height);
     $("html, body")
       .stop()
       .animate(
         {
-          scrollTop: $target.offset().top
+          scrollTop: targetOffset
+          //$target.offset().top - 300
         },
         600,
         function() {
@@ -28,6 +32,7 @@ $(document).ready(function() {
   });
 });
 
+//Active Link Color
 function onScroll(event) {
   var scrollPosition = $(document).scrollTop();
   $("nav a").each(function() {

@@ -109,6 +109,10 @@ button {
 
 #projects {
   padding: 30px 0px;
+  background: url(/Assets/Brick-01.png);
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-size: cover;
   background-color: #030b11;
   color: white; }
   #projects h2 {
@@ -157,7 +161,6 @@ button {
 #skills {
   background: url(/Assets/gearBackground.svg);
   background-attachment: fixed;
-  background-color: rgba(255, 255, 255, 0.4);
   background-position: center;
   background-size: cover;
   background-blend-mode: hard-light;
@@ -408,6 +411,9 @@ footer {
   .container {
     width: 80%;
     margin: 0 auto; }
+
+  #aboutMe {
+    padding: 150px 0 80px 0; }
 
   h1 {
     color: white; }

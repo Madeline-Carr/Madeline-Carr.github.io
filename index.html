@@ -26,7 +26,7 @@
 
   <body>
     <!-- Header -->
-    <header>
+    <header id="header">
       <!-- My Icon -->
       <div class="container topnav">
         <div id="iconContainer">
@@ -39,7 +39,6 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars fa-2x	"></i>
           </a>
-        
         <!-- Navigation -->
         <nav id="myLinks">
           <ul>
@@ -47,14 +46,14 @@
             <li><a href="#projects">Projects</a></li>
             <li class="active"><a href="#skills">Skills</a></li>
             <li><a href="#location">Location</a></li>
-            <li><a href="#contactMePlace">Contact Me</a></li>
+            <li><a href="#contactMe">Contact Me</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <!-- About Me -->
-    <section id="aboutMe">
+    <section id="aboutMe"> 
       <div class="container ">
         <div class="test">
             <div id="title">
@@ -91,9 +90,9 @@
           <!-- Project One -->
           <div class="projectCard">
             <div class="info">
-              <h3>Hello</h3>
+              <h3>My Web Development Portfolio</h3>
             </div>
-            <img src="./Assets/placeholder.png" alt="" />
+            <img src="./Assets/Portfolio.png" alt="" />
             <p>
               This project is my web development portfolio. I am using it to display my web development and design skills.
             </p>
@@ -125,24 +124,28 @@
       <div class="container">
         <h2>My Skills</h2>
         <div id="skills_grid">
-          <!-- Design -->
+          
+          <!-- Work Flow -->
           <div>
-              <img src="./Assets/FrontEnd.svg" alt="Design" />
-              <h2 class="silver">Design</h2>
-              <hr />
-              <p>
-                These are skills that I use to design websites.
-              </p>
-              <hr />
-              <ul>
-                <li>Adobe XD</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Illustrator</li>
-                <li>Adobe Indesign</li>
-              </ul>
-            </div>
-          <!-- Web Development -->
-          <div>
+            <img src="./Assets/WorkFlow.svg" alt="Work Flow" />
+            <h2 class="gold">Work Flow</h2>
+            <hr />
+            <p>                  
+              These are skills that I use as part of my work flow.
+            </p>
+            <hr />
+            <ul>
+              <li>Visual Studio Code</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Bitbucket</li>
+              <li>Gulp</li>
+              <li>Webpack</li>
+              <li>Slack</li>
+            </ul>
+          </div>
+           <!-- Web Development -->
+           <div>
               <img src="./Assets/Backend.svg" alt="Web Development" />
               <h2 class="silver">Web Development</h2>
               <hr />
@@ -164,25 +167,23 @@
               <li>Bootstrap 3 & 4</li>
               </ul>
             </div>
-          
-          <!-- Work Flow -->
+            <!-- Design -->
           <div>
-            <img src="./Assets/WorkFlow.svg" alt="Work Flow" />
-            <h2 class="gold">Work Flow</h2>
-            <hr />
-            <p>                  
-              These are skills that I use as part of my work flow.
-            </p>
-            <hr />
-            <ul>
-              <li>Visual Studio Code</li>
-              <li>Git / GitHub</li>
-              <li>Bitbucket</li>
-              <li>Gulp</li>
-              <li>Webpack</li>
-              <li>Slack</li>
-            </ul>
-          </div>
+              <img src="./Assets/FrontEnd.svg" alt="Design" />
+              <h2 class="silver">Design</h2>
+              <hr />
+              <p>
+                These are skills that I use to design websites.
+              </p>
+              <hr />
+              <ul>
+                <li>Adobe XD</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Indesign</li>
+              </ul>
+            </div>
+          
         </div>
       </div>
     </section>
@@ -203,7 +204,6 @@
         </div>
         <div id="map"></div>
       </div>
-      <div id="contactMePlace"></div>
     </section>
 
     <!-- Contact Me -->

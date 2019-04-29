@@ -139,6 +139,11 @@ button {
 
 #projects {
   padding: 30px 0px;
+  background: url(/Assets/Brick-01.png);
+  background-blend-mode: soft-light;
+  // background: url(/Assets/Tech-01.svg);
+  // background-attachment: fixed;
+  @include backgroundTexture;
   background-color: $super_dark_blue;
   color: white;
   h2 {
@@ -203,7 +208,6 @@ button {
 #skills {
   background: url(/Assets/gearBackground.svg);
   background-attachment: fixed;
-  background-color: rgba(255, 255, 255, 0.4);
   @include backgroundTexture;
   background-blend-mode: hard-light;
   padding: 30px 0px;
