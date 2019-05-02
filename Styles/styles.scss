@@ -123,6 +123,7 @@ button {
   @include button;
   background-color: $light_blue;
   width: 33%;
+  cursor: grab;
 
   &:hover {
     transition: all 0.4s ease 0s;
