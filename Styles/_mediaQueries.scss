@@ -171,18 +171,15 @@
     margin: 0 auto;
   }
 
-  #aboutMe {
-    padding: 150px 0 80px 0;
-  }
-
-  h1 {
-    color: white;
-  }
   //Header
 
   //Header End
   //About Me
   #aboutMe {
+    padding: 150px 0 80px 0;
+    background-attachment: fixed;
+    background-size: 250%;
+    background-position: bottom;
     h1 {
       font-size: 32px;
       margin-bottom: 5px;
@@ -242,6 +239,7 @@
 
   //END LOCATION
 }
+//END 510
 
 //Larger than 1820px
 //Skills

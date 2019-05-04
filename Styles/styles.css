@@ -97,7 +97,8 @@ button {
   padding: 10px;
   font-size: 1.1em;
   background-color: #43c7f2;
-  width: 33%; }
+  width: 33%;
+  cursor: grab; }
   button a {
     color: white; }
   button:hover {
@@ -413,15 +414,14 @@ footer {
     margin: 0 auto; }
 
   #aboutMe {
-    padding: 150px 0 80px 0; }
-
-  h1 {
-    color: white; }
-
-  #aboutMe h1 {
-    font-size: 32px;
-    margin-bottom: 5px;
-    margin-top: 10px; }
+    padding: 150px 0 80px 0;
+    background-attachment: fixed;
+    background-size: 250%;
+    background-position: bottom; }
+    #aboutMe h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+      margin-top: 10px; }
 
   #title {
     margin-top: 20px;
