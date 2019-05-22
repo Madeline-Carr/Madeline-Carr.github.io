@@ -124,6 +124,7 @@ button {
   background-color: $light_blue;
   width: 33%;
   cursor: grab;
+  border-radius: 5px;
 
   &:hover {
     transition: all 0.4s ease 0s;

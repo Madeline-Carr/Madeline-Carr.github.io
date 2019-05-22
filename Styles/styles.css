@@ -98,7 +98,8 @@ button {
   font-size: 1.1em;
   background-color: #43c7f2;
   width: 33%;
-  cursor: grab; }
+  cursor: grab;
+  border-radius: 5px; }
   button a {
     color: white; }
   button:hover {
