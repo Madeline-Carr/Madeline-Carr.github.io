@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Madeline-Carr/Madeline-Carr.github.io/issues"
   },
-  "homepage": "https://github.com/Madeline-Carr/Madeline-Carr.github.io#readme"
+  "homepage": "https://github.com/Madeline-Carr/Madeline-Carr.github.io#readme",
+  "dependencies": {
+    "fstream": "^1.0.12"
+  }
 }
